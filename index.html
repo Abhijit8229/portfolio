@@ -5,39 +5,45 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Kumar Portfolio</title>
+    <title>Abhijit Rayarao</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./public/Banner.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
     <header>
         <div class="header-content">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#Languages">Languages</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="click">Home</a></li>
+                    <li><a href="#about" class="click">About</a></li>
+                    <li><a href="#Skills" class="click">Skills</a></li>
+                    <li><a href="#contact" class="click">Contact</a></li>
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
         </div>
     </header>
 
     
-    <section class="hero_section">
+    <section class="hero_section" id="home">
         <div class="div_styles">
-            <h2>Sandeep</h2>
-            <p>I'm a passionate web developer with a strong foundation in HTML, CSS, and a keen eye for UI/UX design. With experience in tools like Figma and Adobe XD, I love bringing creative ideas to life through clean, user-friendly interfaces.</p>
-             <a href="./sandeepresume.pdf" target="_blank" rel="noopener noreferrer" class="btn_primary">Resume</a>
+            <h2>Abhijit Rayarao</h2>
+            <p>Hi, I'm passionate web developer with a knack for building dynamic and responsive web applications Let's build something amazing together!
+            </p>
+             <a href="./public/abhijit_s_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn_primary">Resume</a>
              <article class="socials">
-                <a href="https://github.com/sandeepvanguri"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol-700x394.png" alt=""></a>
-                <a href="https://linkedin.com/"><img src="https://www.bing.com/ck/a?!&&p=a614b3a9883f1885JmltdHM9MTcyNjM1ODQwMCZpZ3VpZD0wN2Y1NWI5Yy05ODU0LTY3NGUtMGU5Ni00OTE0OTkwNjY2YTAmaW5zaWQ9NTYzNw&ptn=3&ver=2&hsh=3&fclid=07f55b9c-9854-674e-0e96-4914990666a0&u=a1L2ltYWdlcy9zZWFyY2g_cT1saW5rZWRpbiUyMGxvZ28mRk9STT1JUUZSQkEmaWQ9MzY4ODQ4QjQxMzRDMTdFOUMxNkM0NUNFMjU3NENDM0FBNTJDQTY2MQ&ntb=1" alt=""></a>
+                <a href="https://github.com/Abhijit808"><img src="./public/github.jpeg" alt=""></a>
+                <a href="https://linkedin.com/"><img src="./public/linkdin.png" alt=""></a>
+                <a href="#"><img src="./public/twitter.png" alt=""></a>
+    
              </article>
         </div>
         <div class="img_wrapper div_styles">
@@ -47,61 +53,57 @@
         </div>
     </section>
 
-    <section >
-        <div id="about" class="about section_general_styles">
-            <h3>About Me</h3>
-            <div class="details">
-                <p>Hello! I'm a passionate developer with a knack for building dynamic web interfaces using <strong>HTML</strong> and <strong>CSS</strong>. I also dive deep into <strong>Python</strong> to create solutions, especially in <strong>Natural Language Processing (NLP)</strong>. My recent projects focus on processing and analyzing different accents in English, exploring the fascinating intersection of technology and linguistics. Always eager to learn, grow, and contribute to impactful projects!</p>
-
-            </div>
-        </div>
-        <div id="education" class="section_general_styles education">
-            <h3>Education</h3>
-            <div class="details">
-                <p>Bachelor of Technology in Computer Science and Engineering (2020-24)</p>
-                <p>Hyderabad Institute of Technology and Management | CGPA-7.60</p>
-                <p>Intermediate (2018-20)</p>
-                <p>Sri Gayatri Junior College (MPC) | CGPA - 9.4</p>
-                <p>School (2018)</p>
-                <p>S. T Patrick’s High School (SSC) | CGPA - 9.0</p>
-            </div>
-        </div>
-        <div id="projects" class="section_general_styles projects">
-            <h3>Projects</h3>
-            <div class="details">
-                <p><strong>Wafer Fault Detection:</strong> Used ML to detect faults in wafers.</p>
-                <p><strong>PROTO-Customized AI Assistant for Personal Tasks:</strong> Python-based AI assistant for task automation.</p>
-            </div>
-        </div>
-        <div id="skills" class="section_general_styles skills">
-            <h3>Skills</h3>
-            <div class="details">
-                <p>Programming: C, Python</p>
-                <p>Web Development: HTML, CSS</p>
-                <p>Database: MySQL</p>
-                <p>Tools: Git, Jupyter, VSCode, PyCharm</p>
-            </div>
-        </div>
-        <div id="certifications" class="section_general_styles certifications">
-            <h3>Certifications</h3>
-            <div class="details">
-                <p>Python Certificate</p>
-                <p>Data Science</p>
-            </div>
-        </div>
-        <div id="Languages" class="section_general_styles achievements">
-            <h3>Languages</h3>
-            <div class="details">
-                <p>English (fluent)</p>
-                <p>Telugu (native)</p>
-                <p>Hindi (Moderate)</p>
-            </div>
-        </div>
-    </section>
+    <aside >
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I'm a web developer with experience in both front-end and back-end technologies, specializing in creating engaging and efficient web applications. My recent projects include:</p>
+    
+            <ul>
+                <li>
+                    <strong>Wordle Game (May 2023):</strong> Built a responsive and dynamic word-guessing game using Next.js and Firebase, with a focus on utility-first styling and secure user authentication.
+                </li>
+                <li>
+                    <strong>Google Drive Clone (Aug 2023):</strong> Developed a responsive file storage platform using Tailwind CSS and Firebase, ensuring optimal user experience across devices with secure authentication and file management.
+                </li>
+                <li>
+                    <strong>Decentralized Governance Application (Nov 2023):</strong> Created a productivity-boosting platform using React, TypeScript, Redux, and Firebase, incorporating a robust notification system and cross-browser compatibility.
+                </li>
+            </ul>
+    
+            <p>With a keen eye for UI/UX and a passion for efficient, scalable code, I love building solutions that not only look good but also perform seamlessly.</p>
+        </section>
+        <section id="Skills" class="about ">
+            <h2>Skills</h2>
+    
+            <ul class="skills">
+               <li>
+                    <img src="./public/icon-git.png" alt="">
+                    <p>git</p>
+               </li>
+               <li>
+                    <img src="./public/React.png" alt="">
+                    <p>React</p>
+               </li>
+               <li>
+                    <img src="./public/icon-sass.png" alt="">
+                    <p>Scss</p>
+               </li>
+               <li>
+                    <img src="./public/icon-javscript.png" alt="">
+                    <p>Javascript</p>
+               </li>
+               <li>
+                    <img src="./public/icon-nest.png" alt="">
+                    <p>Nest</p>
+               </li>
+              
+            </ul>
+        </section>
+    </aside>
     <section class="contact_form_wrapper">
         <div class="contact-form">
             <h2>Connect with me:</h2>
-            <form action="/submit" method="post" >
+            <form action="#" method="post" class="form">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -123,7 +125,7 @@
 
     <footer>
         <div id="contact" class="footer-content">
-            <p>&copy; 2024 Sandeep Kumar. All rights reserved.</p>
+            <p>&copy; 2024 Abhijit Rayarao. All rights reserved.</p>
         </div>
     </footer>
     

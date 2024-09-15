@@ -16,7 +16,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-
+    overflow-x: hidden;
 }
 
 
@@ -69,7 +69,7 @@ header nav ul li a:hover {
     flex-wrap: wrap-reverse;
     align-items: left;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
 }
 .hero_section .div_styles{
     display: flex;
@@ -86,7 +86,7 @@ header nav ul li a:hover {
     width: 50px;
 }
 .hero_section p{
-   text-align: justify;
+   text-align: left;
    font-size: medium; 
 }
 .img_wrapper{
@@ -95,11 +95,23 @@ header nav ul li a:hover {
 }
 .img_wrapper img{
     border-radius: 50%;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: auto;
     /* aspect-ratio: ; */
 }
 
+.socials a{
+    padding: 10px;
+    border:2px solid blue;
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+}
+.socials a img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
 /* Grid layout for portfolio */
 
 
@@ -120,22 +132,55 @@ section{
 .section_general_styles{
     font-size:medium
 }
-.about { 
-    background-color: #7ebd3e; 
-   
 
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px;
 }
-.education { background-color: #f08d49; }
-.projects { background-color: #ffa85a; }
-.skills { background-color: #4fb2da; }
-.certifications { background-color: #9fc3b4; }
-.achievements { background-color: #5a8191; }
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid blue;
+    box-shadow: 0 0 20px blue;
+}
+.about h2{
+     text-align: center;
+}
+.about ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.about li {
+    list-style: none;
+}
 
-
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+}
+.skills li{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.skills li img{
+   width: 50px;
+}
 .image-text h2 {
     font-size: 36px; 
     margin-bottom: 10px; 
 }
+
 
 .image-text p {
     font-size: 18px;
@@ -203,3 +248,104 @@ footer {
 footer p{
     font-size: small;
 }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.remove{
+    display: none;
+}
+.line_2_rotate{
+    transform: rotate(-45deg);
+}
+.line_3_rotate{
+    transform: rotate(45deg) translateY(-6px) translateX(-5px)
+}
+.overflowY_hidden{
+    overflow-y: hidden !important;
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        left: 0;
+        justify-content: center;
+        height: 100vh;
+        padding: 10px;
+        gap: 20px;
+        top: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 90%;
+        transform: translateX(-200%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .burger {
+        display: block;
+        transition: all 0.5s;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        opacity: 1;
+        transition: opacity 0.5s ease-in 0.2s;
+    }
+    .hero_section{
+        flex-direction: column-reverse;
+        padding: 0 40px;
+    }
+
+}
+
