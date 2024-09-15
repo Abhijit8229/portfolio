@@ -25,6 +25,7 @@ click.forEach((click)=>{
     
    
 })
-form.addEventListener('click',()=>{
+function handleSubmit(e){
+    e.preventDefalut()
     alert("Form submitted")
-})
+}

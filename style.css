@@ -146,6 +146,7 @@ aside{
     padding: 20px;
     border: 2px solid blue;
     box-shadow: 0 0 20px blue;
+    width: 100%;
 }
 .about h2{
      text-align: center;
@@ -163,6 +164,7 @@ aside{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row !important;
+    justify-content: center;
 }
 .skills li{
     border: 2px solid blue;
