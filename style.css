@@ -79,6 +79,10 @@ header nav ul li a:hover {
     gap: 10px;
     flex: 1;
 }
+.div_styles h2{
+    margin-bottom: 10px;
+    text-decoration: none;
+}
 .hero_section article{
     display: flex;
 }
@@ -158,6 +162,15 @@ aside{
 }
 .about li {
     list-style: none;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.about li h2{
+    text-align: left;
 }
 
 .skills{
@@ -192,7 +205,7 @@ aside{
     background-color: #0000;
 }
 .contact-form {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;

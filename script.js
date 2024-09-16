@@ -25,7 +25,8 @@ click.forEach((click)=>{
     
    
 })
-function handleSubmit(e){
-    e.preventDefalut()
-    alert("Form submitted")
-}
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    alert("Response Recived Thank you")
+    form.reset()
+})
