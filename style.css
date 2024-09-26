@@ -60,7 +60,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #0056b3;
 }
 
 /* Image section styling */
@@ -168,6 +168,20 @@ aside{
     gap: 20px;
     justify-content: flex-start;
     padding: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.act{
+
+    border-bottom: 2px solid #0056b3;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+}
+.about li:hover{
+    transform: translateY(-5px);
 }
 .about li h2{
     text-align: left;
